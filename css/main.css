@@ -324,7 +324,7 @@ header a {
 
 @media (max-width:1125px) {
     .hero{
-        background-image: url(/images/hero-image2.webp) !important;
+        background-image: url(../images/hero-image2.webp) !important;
     }
 }
 
@@ -346,7 +346,7 @@ header a {
 
 @media (max-width:525px) {
     .hero {
-        background-image: url(/images/hero-image3.webp) !important;
+        background-image: url(../images/hero-image3.webp) !important;
     }
 }
 @media (max-width:475px) {
