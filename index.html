@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header class=" header d-flex justify-content-between align-items-center px-5 py-3">
+        <img src="/images/hamburger-menu.svg" alt="" class="d-none menu">
+        <div class="dropdown d-flex flex-column position-relative">
+            <button class="dropbtn d-flex gap-2 align-items-center bg-transparent border-0 cursor-pointer" style="color: rgb(79, 92, 80);">HOME<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content d-flex gap-5 position-absolute px-5" style="background-color: #f1f1f1;">
+                <div class="collections d-flex flex-column gap-4">
+                    <h3 class="pb-2">COLLECTIONS</h3>
+                    <h5><a href="/new-in" class="text-decoration-none">NEW IN</a></h5>
+                    <h5><a href="/best-sellers" class="text-decoration-none">BEST SELLERS</a></h5>
+                    <h5><a href="/comfort-bras" class="text-decoration-none">COMFORT BRA FULLER CUP BRAS</a></h5>
+                    <h5><a href="/nursing-bra" class="text-decoration-none">NURSING BRA</a></h5>
+                    <h5><a href="/briefs" class="text-decoration-none">BRIEFS</a></h5>
+                    <h5><a href="/brands-we-love" class="text-decoration-none">BRANDS WE LOVE</a></h5>
+                    <h5><a href="/outlet" class="text-decoration-none">OUTLET</a></h5>
+                </div>
+                <div class="useful-links d-flex flex-column gap-4">
+                    <h3 class="pb-2">USEFUL LINKS</h3>
+                    <h5><a href="/blog" class="text-decoration-none">BLOG</a></h5>
+                    <h5><a href="/stockist-finder" class="text-decoration-none">STOCKIST FINDER</a></h5>
+                </div>
+            </div>
+        </div>
+        <img src="/images/Royce_RGB_Primary_Forest_Green-01-1.svg" alt="" class="logo">
+        <div class="header-icons d-flex gap-3">
+            <img src="/images/search-3-1.svg" alt="" class="widget">
+            <img src="/images/avatar-1.svg" alt="" class="widget">
+            <img src="/images/cart.webp" alt="" class="widget">
+        </div>
+    </header>
+    <div class="cart d-flex flex-column align-items-center px-2 position-fixed border"
+        style="border-color: #faf6f4; color: rgb(88, 88, 88); background-color: #FAF6F4;">
+        <i class="fa fa-shopping-bag" style="font-size: 13px;"></i>
+        <span>0 items</span>
+    </div>
+
+    <section class="hero vh-100" style="background-image: url(/images/hero-image.webp); background-size: cover; background-position: center top; background-repeat: no-repeat;">
+        <h2 class="d-flex justify-content-center position-relative text-white top-50">EMPOWERING EVERY WOMAN, EVERY DAY</h2>
+    </section>
+    <section class="bra-category d-flex flex-column gap-2 pb-5">
+        <h2 class="ps-4" style="color: rgb(73, 102, 94);">THE ORIGINAL WIREFREE LINGERIE</h2>
+        <div class="bra-category-container d-grid gap-4 align-self-center"
+            style="grid-template-columns: repeat(3, 1fr);">
+            <div class="bra-category-item d-flex flex-column gap-4 align-items-center py-3">
+                <img src="/images/Homepage_Category_best-sellers.webp" alt="" class="bra-image">
+                <h3>Best Sellers</h3>
+            </div>
+            <div class="bra-category-item d-flex flex-column gap-4 align-items-center py-3">
+                <img src="/images/Homepage_Category_comfort.webp" alt="" class="bra-image">
+                <h3>Comfort Bras</h3>
+            </div>
+            <div class="bra-category-item d-flex flex-column gap-4 align-items-center py-3">
+                <img src="/images/Homepage_Category_fullercup.webp" alt="" class="bra-image">
+                <h3>Fuller Cup Bras</h3>
+            </div>
+            <div class="bra-category-item d-flex flex-column gap-4 align-items-center py-3">
+                <img src="/images/Homepage_Category_nursing.webp" alt="" class="bra-image">
+                <h3>Nursing Bras</h3>
+            </div>
+            <div class="bra-category-item d-flex flex-column gap-4 align-items-center py-3">
+                <img src="/images/Homepage_Category_postsurgery.webp" alt="" class="bra-image">
+                <h3>Post Surgery Bras</h3>
+            </div>
+            <div class="bra-category-item d-flex flex-column gap-4 align-items-center py-3">
+                <img src="/images/Homepage_Category_teen-1024x1024.webp" alt="" class="bra-image">
+                <h3>Teen Bras</h3>
+            </div>
+        </div>
+    </section>
+    <section class="more position-relative vh-100"
+        style="background-image: url(/images/Royce-banner-georgia-comfort-bra.jpg); background-repeat: no-repeat; background-size: cover;">
+        <div class="more-text d-flex flex-column position-absolute">
+            <h2 class="text-white">The Unapologetic Menopause</h2>
+            <button class="btn more-btn align-self-center text-white p-2 rounded-0"
+                style="background-color: #e1c3c1; color: rgb(225, 225, 225);">
+                FIND OUT MORE
+            </button>
+        </div>
+    </section>
+    <section class="best-sellers d-flex flex-column  gap-4 align-items-center mx-auto my-5">
+        <h2>Best sellers</h2>
+        <div class="best-sellers-container d-flex justify-content-center gap-3">
+            <div class="best-sellers-item d-flex flex-column gap-2" style="color: rgb(88, 88,88);">
+                <img src="/images/2021_Comfibra_blk.webp" alt="" class="best-sellers-image">
+                <div class="best-sellers-text d-flex flex-column">
+                    <a href="#" class="text-decoration-none" style="color: #4F5C50;">Comfi-Bra Front Fastening Cotton
+                        Bra</a>
+                    <span>£36.00</span>
+                </div>
+            </div>
+            <div class="best-sellers-item d-flex flex-column gap-2" style="color: rgb(88, 88,88);">
+                <img src="/images/Mia-7.webp" alt="" class="best-sellers-image">
+                <div class="best-sellers-text d-flex flex-column">
+                    <a href="#" class="text-decoration-none" style="color: #4F5C50;">Mia Non-Padded Organic Cotton
+                        Bra</a>
+                    <span>£36.00</span>
+                </div>
+            </div>
+            <div class="best-sellers-item d-flex flex-column gap-2" style="color: rgb(88, 88,88);">
+                <img src="/images/578_Robyn_Black-3-600x800.jpg" alt="" class="best-sellers-image">
+                <div class="best-sellers-text d-flex flex-column">
+                    <a href="#" class="text-decoration-none" style="color: #4F5C50;">Robyn Full Cup Non-Padded Bra</a>
+                    <span>£36.00</span>
+                </div>
+            </div>
+            <div class="best-sellers-item hide d-flex flex-column gap-2" style="color: rgb(88, 88,88);">
+                <img src="/images/886p_Georgia-600x800.jpg" alt="" class="best-sellers-image">
+                <div class="best-sellers-text d-flex flex-column">
+                    <a href="#" class="text-decoration-none" style="color: #4F5C50;">Georgia Moulded T-Shirt Bra</a>
+                    <span>£36.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="best-sellers-item show d-none flex-column gap-2 align-self-start" style="color: rgb(88, 88,88);">
+                <img src="/images/886p_Georgia-600x800.jpg" alt="" class="best-sellers-image">
+                <div class="best-sellers-text d-flex flex-column">
+                    <a href="#" class="text-decoration-none" style="color: #4F5C50;">Georgia Moulded T-Shirt Bra</a>
+                    <span>£36.00</span>
+                </div>
+            </div>
+    </section>
+    <section class="reviews d-flex flex-column gap-4 py-4" style="background-color: #faf6f4;">
+        <div class="reviews-container container d-flex gap-4 pt-3 flex-nowrap overflow-auto">
+            <div class="reviews-card d-flex flex-column">
+                <div class="card-top d-flex flex-column gap-1">
+                    <h5>Yvonne Hawes
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                    </h5>
+                    <span>Verified Customers</span>
+                    <h6>Comfi-Bra-42-WHITE-D/DD</h6>
+                    <p>Very comfortable</p>
+                </div>
+                <div class="card-bottom">
+                    <span>Cambridge, GB, 3 days ago</span>
+                </div>
+            </div>
+            <div class="reviews-card d-flex flex-column">
+                <div class="card-top d-flex flex-column gap-1">
+                    <h5>Anonymous
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                    </h5>
+                    <span>Verified Customers</span>
+                    <h6>Charlotte-Black in size 40JJ</h6>
+                    <p>Very good quality great fitting well designed</p>
+                </div>
+                <div class="card-bottom">
+                    <span>Croydon, GB, 5 days ago</span>
+                </div>
+            </div>
+            <div class="reviews-card d-flex flex-column">
+                <div class="card-top d-flex flex-column gap-1">
+                    <h5>Christina Conquergood
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                    </h5>
+                    <span>Verified Customers</span>
+                    <h6>Silver Post Surgery Bra-Skin in size 36B/C</h6>
+                    <p>An excellent product to provide client / patient with optimal
+                        healing potential in a bra! The only caution is that the cup
+                        is quite projected which results in a large cup fit. Surgeons
+                        ususally like a firmer fit, so you must size down if possible.
+                    </p>
+                </div>
+                <div class="card-bottom">
+                    <span>Penticton, GB, 6 days ago</span>
+                </div>
+            </div>
+            <div class="reviews-card d-flex flex-column">
+                <div class="card-top d-flex flex-column gap-1">
+                    <h5>Anonymous
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                    </h5>
+                    <span>Verified Customers</span>
+                    <h6>Grace-White in size 34E</h6>
+                    <p>Very comfortable, good fit and true size.</p>
+                </div>
+                <div class="card-bottom">
+                    <span>Whistable, GB, 6 days ago</span>
+                </div>
+            </div>
+            <div class="reviews-card d-flex flex-column">
+                <div class="card-top d-flex flex-column gap-1">
+                    <h5>Rosemary Dudley
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                    </h5>
+                    <span>Verified Customers</span>
+                    <h6>Feame-40-GREY-G</h6>
+                    <p>perfect, just perfect, Easy to fastening after surgery, soft, but supports well...sizing
+                        perfect. Thank you</p>
+                </div>
+                <div class="card-bottom">
+                    <span>london, GB, 1 week ago</span>
+                </div>
+            </div>
+            <div class="reviews-card d-flex flex-column">
+                <div class="card-top d-flex flex-column gap-1">
+                    <h5>Anonymous
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                    </h5>
+                    <span>Verified Customers</span>
+                    <h6>Grace-White in size 34E</h6>
+                    <p>Very comfortable, good fit and true size.</p>
+                </div>
+                <div class="card-bottom">
+                    <span>Whistable, GB, 6 days ago</span>
+                </div>
+            </div>
+            <div class="reviews-card d-flex flex-column">
+                <div class="card-top d-flex flex-column gap-1">
+                    <h5>Rosemary Dudley
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                        <i class="fa fa-star" style="font-size:16px"></i>
+                    </h5>
+                    <span>Verified Customers</span>
+                    <h6>Feame-40-GREY-G</h6>
+                    <p>perfect, just perfect, Easy to fastening after surgery, soft, but supports well...sizing
+                        perfect. Thank you</p>
+                </div>
+                <div class="card-bottom">
+                    <span>london, GB, 1 week ago</span>
+                </div>
+            </div>
+        </div>
+        <img src="/images/reviewsio-logo.svg" alt="" class="reviews-logo align-self-end pe-2">
+        <!-- <div class="stars"><i class="fa fa-star" style="font-size:16px"></i>
+                    <i class="fa fa-star" style="font-size:16px"></i>
+                    <i class="fa fa-star" style="font-size:16px"></i>
+                    <i class="fa fa-star" style="font-size:16px"></i></div> -->
+    </section>
+    <section class="sign-up d-flex justify-content-center align-items-center">
+        <div class="sign-up__text pe-3">
+            <h4 class="pb-3 border-bottom border-dark">Fancy treating yourself</h4>
+            <p class="pt-3">Sign up to our newsletter and get <span class="highlight">10% off</span> your first order.
+            </p>
+        </div>
+        <div class="subscribe d-flex">
+            <p class="subscribe-text align-items-center bg-light">Enter email address?</p>
+            <button class="btn subscribe-btn"> SUBSCRIBE</button>
+        </div>
+    </section>
+    <section class="partners d-flex flex-column gap-4 align-items-center pb-4">
+        <div class="partners-text d-flex flex-column gap-4 align-items-center">
+            <h5 class="text-capitalize">Retail Partners</h5>
+            <p>
+                <span>Find your</span>
+                <a href="#" class="partners-link text-decoration-none">local stockist</a>
+            </p>
+        </div>
+        <div class="partners-images d-flex gap-3">
+            <img src="/images/brav.png" alt="" class="partner-image">
+            <img src="/images/fenw.png" alt="" class="partner-image">
+            <img src="/images/john.png" alt="" class="partner-image">
+        </div>
+    </section>
+    <footer>
+        <p class="footer-social d-flex gap-3 py-5 justify-content-center">
+            <a href="#" class="footer-links text-decoration-none">DELIVERY</a>
+            <a href="#" class="footer-links text-decoration-none">HELP</a>
+            <a href="#" class="footer-links text-decoration-none">ABOUT</a>
+            <a href="#" class="footer-links text-decoration-none">STOCKIST FINDER</a>
+            <a href="#" class="footer-links text-decoration-none">SUSTAINABILITY</a>
+            <a href="#" class="footer-links text-decoration-none">TRADE LOGIN</a>
+            <a href="#" class="footer-links text-decoration-none">RETURNS</a>
+            <a href="#" class="footer-links text-decoration-none">OUTLET</a>
+            <a href="#" class="footer-links text-decoration-none">TERMS</a>
+            <a href="#" class="footer-links text-decoration-none">PRIVACY POLICY</a>
+            <a href="#" class="footer-links text-decoration-none">COOKIES</a>
+            <a href="#" class="footer-links text-decoration-none">CONTACT-US</a>
+        </p>
+        <div class="footer-container d-flex justify-content-between px-3 pt-3 text-decoration-none">
+            <img src="/images/payment-icons.webp" alt="" class="payment-icons">
+            <p class="footer-address d-flex flex-column align-items-end">© 2025 Royce Lingerie, Royce House, Canada
+                Close,
+                Banbury, Oxfordshire, OX16 2RT,
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

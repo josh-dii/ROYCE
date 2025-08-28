@@ -1,0 +1,815 @@
+/***************** GENERAL STYLE ******************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: "Montserrat";
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    font-weight: 300;
+    font-style: normal;
+    color: #585858;
+}
+
+header a {
+    color: #26234E;
+}
+
+.logo {
+    width: 120px;
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.2);     
+}
+
+.widget {
+    width: 24px
+}
+
+.cart {
+    width: 60px;
+    border-radius: .8rem;
+    left: 95.5%;
+    top: 25%;
+    font-size: 10px;
+    padding-block: .8rem;
+    z-index: 3;
+}
+
+
+.dropbtn {
+  padding: 10px 16px;
+}
+
+.dropdown-content {
+  display: none !important;
+  position: absolute; /* from Bootstrap class but explicitly set here for clarity */
+  height: 100vh;
+  top: 3.75rem;
+  width: 100vw;
+  left: -3rem;
+  min-width: 62rem;
+  padding: 2rem 3rem;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex !important;
+}
+
+.collections h3,
+.useful-links h3 {
+    border-bottom: 1px solid black;
+}
+/***************** HERO SECTION STYLE ******************/
+
+.hero {
+    min-height: 500px;
+}
+
+/***************** BRA-CATEGORY SECTION STYLE ******************/
+
+.bra-category {
+    padding-top: 4rem;
+}
+
+.bra-category-item {
+    width: fit-content;
+}
+
+.bra-category-item h3 {
+    color: rgba(0, 0, 0, 0.648);
+    font-weight: 400;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.bra-image {
+    width: 360px;
+    height: 300px;
+} 
+
+
+/***************** MORE SECTION STYLE ******************/
+
+.more-text {
+    left: 20%;
+    top: 58%;
+    gap: 2rem;
+}
+
+.more-text h2{
+    font-size: 29px;
+}
+
+.more-btn {
+    font-weight: 400;
+}
+
+
+/***************** BEST-SELLLERS SECTION STYLE ******************/
+
+.best-sellers h2 {
+    font-family: "sans-serif" !important;
+    font-size: 29px; 
+}
+
+.best-sellers-container {
+    width: 70rem;
+}
+
+.best-sellers-item {
+    width: 270px;
+    font-size: 19px;
+
+}
+
+.best-sellers-text a {
+    font-family: "sans-serif" !important;
+}
+
+
+/***************** REVIEWS SECTION STYLE ******************/
+
+.reviews-container  {
+    scrollbar-width: none;
+    width: 990px;
+    
+}
+
+.reviews-card {
+    width: 315px;
+    height: 205px;
+    min-width: 310px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: rgb(88, 88, 88);
+    line-height: 1.3rem;
+}
+
+.card-top {
+    height: 175px;
+}
+
+.card-top h5{
+    font-size: 12px;
+    color: rgb(88, 88, 89);
+    font-weight: 600;
+}
+
+.card-top span {
+    font-size: 11px;
+    color: rgb(14, 19, 17);
+}
+
+.card-top h6 {
+    font-size: 12px;
+    font-style: italic;
+     font-weight: 400;
+}
+
+.card-top p {
+    font-size: 14px;
+     font-weight: 400;
+}
+
+.card-bottom {
+    font-size: 11px;
+    align-self: end;
+}
+
+.reviews-logo {
+    width: 120px;
+}
+
+
+/***************** SIGN-UP SECTION STYLE ******************/
+
+.sign-up {
+    background-color: #CCD6C7;
+    padding-block: 4.5rem;
+    padding-inline: 5rem;
+}
+
+.sign-up__text {
+    width: 550px;
+}
+
+.sign-up__text h4{
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.sign-up__text p{
+    color: rgb(116, 116, 116);
+    font-weight: 300;
+}
+
+.highlight {
+    font-weight: 600;
+}
+
+.subscribe-text {
+    width: 450px;
+    padding: .8rem;
+    color: rgb(88, 88,88);
+    font-weight: 400;
+}
+
+.subscribe-btn {
+    padding: .8rem 1.2rem;
+    background-color: #505D50;
+    color: white;
+    border-radius: .2rem;
+}
+
+/***************** PARTNERS SECTION STYLE ******************/
+
+.partners {
+    background-color: #F5EFE9;
+    padding-top: 2rem;
+    font-weight: 300;
+}
+
+.partners h5{
+    font-size: 29px;
+    font-family: "the-seasons";
+    line-height: 40px;
+}
+
+.partners-text p{
+    color: #515559;
+}
+
+.partners-link {
+    font-weight: 600;
+    color: #4F5C50;
+}
+
+.partners-link:hover {
+    color: rgb(160, 161, 129);
+}
+.partner-image {
+    width: 300px;
+}
+
+
+/***************** FOOTER SECTION STYLE ******************/
+
+.footer-links {
+    font-size: 14px;
+    font-weight: 200;
+    color: rgb(159, 159, 159);
+    text-align: center;
+}
+
+.footer-container {
+    border-top: 1.5px solid black;
+}
+
+.footer-address {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(170, 170, 170);
+    padding-bottom: 4rem;
+}
+
+.payment-icons {
+    width: 300px;
+    height: 25px;
+}
+
+
+
+
+
+@media (max-width:775px) {
+    .header {
+        padding-inline: 1.2rem !important;
+    }
+    .logo {
+        width: 100px;
+    }
+    
+}
+
+@media (max-width:525px) {
+    .header-icons {
+        gap: .5rem !important;
+    }
+}
+
+@media (max-width:475px) {
+    .dropdown {
+        display: none !important;
+    }
+    .logo {
+        width: 80px;
+    }
+    .widget {
+        width: 20px;
+    }
+}
+/****************** BRA-CATEGORY RESPONSIVE ******************/
+
+@media (max-width:1125px) {
+    .hero{
+        background-image: url(/images/hero-image2.webp) !important;
+    }
+}
+
+@media (max-width:991px) {
+    .hero {
+        max-height: 670px;
+    }
+}
+
+@media (max-width:700px) {
+    .hero {
+        max-height: 500px;
+    }
+    .hero h2 {
+        font-size: 19px !important;
+        padding-inline: 1.2rem;
+    }
+}
+
+@media (max-width:525px) {
+    .hero {
+        background-image: url(/images/hero-image3.webp) !important;
+    }
+}
+@media (max-width:475px) {
+    .hero h2 {
+        font-size: 16px !important;
+        text-align: center;
+    }
+}
+
+
+/****************** BRA-CATEGORY RESPONSIVE ******************/
+
+@media (max-width:1165px) {
+    .bra-image {
+        width: 320px;
+    }
+}
+
+@media (max-width:1065px) {
+    .bra-image {
+        width: 280px;
+        height: 260px;
+    }
+}
+
+@media (max-width:905px) {
+    .bra-image {
+        width: 250px;
+        height: 230px;
+    }
+}
+
+@media (max-width:835px) {
+    .bra-category {
+        gap: 2rem !important;
+    }
+    .bra-category-item {
+        padding-block: 0 !important;
+    }
+    .bra-image {
+        width: 230px;
+        height: 210px;
+    }
+}
+
+@media (max-width:775px) {
+    .bra-category-container {
+        display: flex !important;
+        flex-direction: column;
+        gap: 3rem !important;
+    }
+     .bra-image {
+        width: 600px;
+        height: 500px;
+    }
+}
+
+@media (max-width:675px) {
+    .bra-image {
+        width: 500px;
+        height: 400px;
+    }
+}
+
+@media (max-width:575px) {
+    .bra-category {
+        padding-block: 2rem !important;
+    }
+    .bra-image {
+        width: 400px;
+        height: 330px;
+    }
+}
+
+@media (max-width:425px) {
+    .bra-category {
+        gap: 1rem !important;
+        padding-block: 2.5rem !important;
+    }
+    .bra-category h2 {
+        font-size: 18px;
+    }
+    .bra-category-container {
+        gap: 1.5rem !important;
+    }
+    .bra-category-item {
+        gap: 1rem !important;
+    }
+    .bra-image {
+        width: 300px;
+        height: 250px;
+    }
+}
+/****************** BEST-SELLERS RESPONSIVE ******************/
+
+@media (max-width:1165px) {
+ .best-sellers {
+    width: 60rem;
+}
+ .best-sellers-container {
+    width: 60rem;
+}
+ .best-sellers-item {
+    width: 230px;
+ }
+ .best-sellers-image {
+    width: 230px;
+ }
+}
+
+@media (max-width:991px) {
+    .best-sellers,
+    .best-sellers-container {
+        width: 50rem;
+    }
+    .best-sellers-item,
+    .best-sellers-image {
+        width: 180px;
+    }
+}
+
+@media (max-width:805px) {
+    .best-sellers {
+        width: fit-content;
+    }
+    .best-sellers-container {
+        width: fit-content;
+    }
+    .best-sellers-item,
+    .best-sellers-image {
+        width: 150px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width:775px) {
+    .best-sellers {
+        gap: 2rem !important;
+    }
+    .best-sellers-container {
+        gap: 1.5rem !important;
+    }
+    .best-sellers-item,
+    .best-sellers-image {
+        width: 200px;
+        font-size: 19px;
+    }
+    .hide {
+        display: none !important;
+    }
+    .show {
+        display: flex !important;
+    }
+}
+
+@media (max-width:675px) {
+    .best-sellers-item,
+    .best-sellers-image {
+        width: 170px;
+    }
+}
+
+@media (max-width:675px) {
+    .best-sellers-container {
+        gap: 1rem !important;
+    }
+    .best-sellers-item,
+    .best-sellers-image {
+        width: 150px;
+    }
+    .best-sellers-text {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:515px) {
+    .best-sellers-container {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .best-sellers-item,
+    .best-sellers-image {
+        width: 200px;
+    }
+    .hide {
+        display: block !important;
+    }
+    .show {
+        display: none !important;
+    }
+}
+
+@media (max-width:435px) {
+    .best-sellers {
+        gap: 1rem !important;
+    }
+    .best-sellers-item,
+    .best-sellers-image {
+        width: 150px;
+    }
+}
+
+@media (max-width:425px) {
+    .best-sellers-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem !important;
+    }
+    .best-sellers-item,
+    .best-sellers-image {
+        width: 300px;
+    }
+    .best-sellers-text {
+        font-size: 20px;
+    }
+}
+
+
+/****************** MORE RESPONSIVE ******************/
+
+@media (max-width:1065px) {
+    .more {
+        background-position: center;
+    }
+}
+
+@media (max-width:775px) {
+    .more {
+        height: 50vh !important;
+    }
+    .more-text {
+        gap: 1rem;
+    }
+}
+
+@media (max-width:675px) {
+    .more-text {
+        left: 15%;
+    }
+}
+
+@media (max-width:575px) {
+    .more-text h2 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width:475px) {
+    .more-text {
+         left: 10%;
+    }
+    .more-text h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:425px) {
+    .more-btn {
+        font-size: 14px;
+    }
+    .more-text h2 {
+        font-size: 17px;
+   }
+}
+
+@media (max-width:375px) {
+    .more-btn {
+        font-size: 12px;
+    }
+}
+/****************** REVIEWS RESPONSIVE ******************/
+
+@media (max-width:991px) {
+    .reviews-container {
+        width: fit-content;
+    }
+    .reviews-card {
+        width: 350px;
+        min-width: 330px;
+    }
+}
+
+@media (max-width:775px) {
+    .reviews-container,
+    .reviews-card {
+        width: 500px;
+        min-width: 470px;
+    }
+    .card-top {
+        gap: .7rem !important;
+    }
+}
+
+@media (max-width:575px) {
+    .reviews-container,
+    .reviews-card {
+        width: 400px;
+        min-width: 380px;
+    }
+}
+
+@media (max-width:475px) {
+   .reviews-container,
+    .reviews-card {
+        width: 350px;
+        min-width: 330px;
+    }
+    .reviews-card {
+        gap: 1.5rem !important;
+        height: 220px;
+    }
+}
+
+@media (max-width:375px) {
+    .reviews-container,
+    .reviews-card {
+        width: 320px;
+        min-width: 300px;
+    }
+}
+
+
+@media (max-width:345px) {
+    .reviews-container,
+    .reviews-card {
+        width: 290px;
+        min-width: 270px;
+    }
+}
+
+/****************** SING-UP RESPONSIVE ******************/
+
+@media (max-width:1165px) {
+    .subscribe-text {
+        width: 400px;
+    }
+}
+
+@media (max-width:1165px) {
+    .sign-up__text h4 {
+      font-size: 25px;
+    }
+}
+
+@media (max-width:1004px) {
+    .sign-up {
+        padding-inline: 3rem;
+    }
+}
+
+@media (max-width:991px) {
+    .subscribe-text {
+        width: 350px;
+    }
+}
+
+@media (max-width:885px) {
+    .sign-up {
+        padding-inline: 2rem;
+    }
+    .subscribe-text {
+        width: 300px;
+    }
+}
+
+@media (max-width:775px) {
+    .sign-up {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .sign-up__text {
+        text-align: start;
+    }
+    .subscribe-text{
+        width: 350px;
+    }
+}
+
+@media (max-width:775px) {
+    .sign-up__text,
+    .subssribe {
+        width: 480px;
+    }
+}
+
+@media (max-width:505px) {
+    .sign-up__text {
+        width: 100%;
+    }
+    .sign-up__text p {
+        font-size: 14px;
+    }
+    .subscribe {
+        width: 100%;
+        flex-direction: column;
+    }
+    .subscribe-text {
+        width: 100%;
+    }
+}
+/****************** PARTNERS RESPONSIVE ******************/
+
+@media (max-width:991px) {
+    .partner-image {
+        width: 250px;
+    }
+}
+@media (max-width:775px) {
+    .partners-images {
+        flex-direction: column;
+    }
+}
+/****************** FOOTER RESPONSIVE ******************/
+
+@media (max-width:1165px) {
+    .footer-links {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:1004px) {
+    .footer-social {
+        display: none !important;
+    }
+    .footer-address {
+        width: 420px;
+        text-align: end;
+    }
+}
+
+@media (max-width:775px) {
+    .payment-icons {
+        width: 250px;
+    }
+}
+
+@media (max-width:675px) {
+    .footer-container {
+        gap: 2rem;
+    }
+}
+
+@media (max-width:575px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    .footer-address {
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+}
+
+@media (max-width:435px) {
+    .footer-address{
+        font-size: 12px;
+        width: 350px;
+    }
+}
+
+@media (max-width:375px) {
+    .footer-address{
+        font-size: 10px;
+        width: 300px;
+    }
+}
