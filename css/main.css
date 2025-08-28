@@ -54,7 +54,7 @@ header a {
   position: absolute; /* from Bootstrap class but explicitly set here for clarity */
   height: 100vh;
   top: 3.75rem;
-  width: 100vw;
+  flex-grow: 1;
   left: -3rem;
   min-width: 62rem;
   padding: 2rem 3rem;
